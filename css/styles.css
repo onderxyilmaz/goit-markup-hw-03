@@ -155,7 +155,7 @@ img {
 
 /* "visually-hidden" class'ının özelliklerini tanımla */
 .visually-hidden {
-    display: none;
+    visibility: hidden;
 }
 
 /* "our-features-ul" class'ının özelliklerini tanımla */
