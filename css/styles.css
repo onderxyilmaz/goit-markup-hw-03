@@ -17,6 +17,29 @@ img {
 }
 
 /* --- HEADER BÖLÜMÜ --- */
+/* "header" class'ının özelliklerini tanımla */
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+/* "header-div" class'ının özelliklerini tanımla */
+.header-div {
+    display: flex;
+}
+
+/* "container" class'ının özelliklerini tanımla */
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* "navigation" class'ının özelliklerini tanımla */
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 /* "logo" class'ının özelliklerini tanımla */
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -26,11 +49,23 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px
 }
 
 /* "logo-span" class'ının özelliklerini tanımla */
 .header-logo-span {
     color: #2e2f42;
+}
+
+/* "navigation-ul" class'ının özelliklerini tanımla */
+.navigation-ul {
+    display: flex;
+    gap: 40px;
+}
+
+/* "navigtation-li" class'ının özelliklerini tanımla */
+.navigation-li {
+    padding: 24px 0;
 }
 
 /* "menu" class'ının özelliklerini tanımla */
@@ -50,6 +85,12 @@ img {
 /* "adres" class'ının özelliklerini tanımla */
 .adres {
     font-style: normal;
+}
+
+/* "adres-ul" class'ının özelliklerini tanımla */
+.adres-ul {
+    display: flex;
+    gap: 40px;
 }
 
 /* "adres-link" class'ının özelliklerini tanımla */
