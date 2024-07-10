@@ -166,7 +166,7 @@ img {
 
 /* "our-features-li" class'ının özelliklerini tanımla */
 .our-features-li {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4)
 }
 
 /* "our-features-list-header" class'ının özelliklerini tanımla */
