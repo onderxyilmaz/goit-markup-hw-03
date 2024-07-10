@@ -12,6 +12,10 @@ body {
     
 }
 
+img {
+    display: block;
+}
+
 /* --- HEADER BÖLÜMÜ --- */
 /* "logo" class'ının özelliklerini tanımla */
 .header-logo {
