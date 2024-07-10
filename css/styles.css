@@ -148,6 +148,27 @@ img {
 }
 
 /* --- SECTION 2 BÖLÜMÜ */
+/* "our-features-section" class'ının özelliklerini tanımla */
+.our-features-section {
+    padding: 120px 0;
+}
+
+/* "visually-hidden" class'ının özelliklerini tanımla */
+.visually-hidden {
+    display: none;
+}
+
+/* "our-features-ul" class'ının özelliklerini tanımla */
+.our-features-ul {
+    display: flex;
+    gap: 24px;
+}
+
+/* "our-features-li" class'ının özelliklerini tanımla */
+.our-features-li {
+    width: calc((100% - 72px) / 4);
+}
+
 /* "our-features-list-header" class'ının özelliklerini tanımla */
 .our-features-list-header {
     font-weight: 500;
@@ -155,6 +176,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 /* "our-features-list-paragraph" class'ının özelliklerini tanımla */
