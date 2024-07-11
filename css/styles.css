@@ -195,7 +195,7 @@ ul {
 
 /* "visually-hidden" class'ının özelliklerini tanımla */
 .visually-hidden {
-    visibility: hidden;
+    overflow: hidden;
 }
 
 /* "our-features-ul" class'ının özelliklerini tanımla */
