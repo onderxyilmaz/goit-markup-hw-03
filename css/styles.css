@@ -1,7 +1,11 @@
 /* --- GENEL ÖZELLİK TANIMLAMALARI --- */
 /* Root Elemanlarına Fontları Ekle */
-:root {
-    --font-family: 'Roboto', sans-serif;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Body Tag'inin Özelliklerini Tanıma */
@@ -9,22 +13,51 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #ffffff;
-    
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 img {
     display: block;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* --- HEADER BÖLÜMÜ --- */
 /* "header" class'ının özelliklerini tanımla */
 .header {
     border-bottom: 1px solid #e7e9fc;
+    height: 72px;
 }
 
 /* "header-div" class'ının özelliklerini tanımla */
 .header-div {
     display: flex;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* "container" class'ının özelliklerini tanımla */
@@ -38,6 +71,7 @@ img {
 .navigation {
     display: flex;
     align-items: center;
+    background-color: #FFFFFF;
 }
 
 /* "logo" class'ının özelliklerini tanımla */
