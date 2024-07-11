@@ -65,6 +65,11 @@ ul {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* "navigation" class'ının özelliklerini tanımla */
@@ -195,7 +200,7 @@ ul {
 
 /* "visually-hidden" class'ının özelliklerini tanımla */
 .visually-hidden {
-    overflow: hidden;
+    display: none;
 }
 
 /* "our-features-ul" class'ının özelliklerini tanımla */
