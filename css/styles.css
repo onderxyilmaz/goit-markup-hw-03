@@ -1,28 +1,21 @@
-/* --- GENEL ÖZELLİK TANIMLAMALARI --- */
-/* Root Elemanlarına Fontları Ekle */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Body Tag'inin Özelliklerini Tanıma */
-body {
-    font-family: 'Roboto', sans-serif;
+body{
+    font-family:'Roboto', sans-serif;
     color: #434455;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
 }
-
-a {
-    text-decoration: none;
-}
-
+a{text-decoration: none;}
 h1,
 h2,
 h3,
@@ -30,80 +23,64 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
-img {
+img{
     display: block;
     width: 100%;
 }
-
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
+  }
 
-/* --- HEADER BÖLÜMÜ --- */
-/* "header" class'ının özelliklerini tanımla */
-.header {
-    border-bottom: 1px solid #e7e9fc;
-    height: 72px;
-}
-
-/* "header-div" class'ının özelliklerini tanımla */
-.header-div {
-    display: flex;
-    height: 100%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* "container" class'ının özelliklerini tanımla */
-.container {
+.container{
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
 
-/* "navigation" class'ının özelliklerini tanımla */
-.navigation {
-    display: flex;
-    align-items: center;
+.home-navbar{
     background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
 }
-
-/* "logo" class'ının özelliklerini tanımla */
-.header-logo {
+.logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
-    margin-right: 76px
+    color: #4D5AE5;
+    margin-right: 76px;
+}
+.span{
+    color: #2E2F42;
 }
 
-/* "logo-span" class'ının özelliklerini tanımla */
-.header-logo-span {
-    color: #2e2f42;
+.header{
+    border-bottom: 1px solid #e7e9fc;
+    height: 72px;
 }
-
-/* "navigation-ul" class'ının özelliklerini tanımla */
-.navigation-ul {
+.header-div{
+        display: flex;
+        height: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+}
+.header-menu{
     display: flex;
     gap: 40px;
 }
+.header-menu .list:last-child{
+    margin-right: 0;
+}
 
-/* "navigtation-li" class'ının özelliklerini tanımla */
-.navigation-li {
+.header-menu .list .etiket{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -112,266 +89,200 @@ ul {
     letter-spacing: 0.02em;
     padding: 24px 0;
 }
-
-/* "menu" class'ının özelliklerini tanımla */
-.menu {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-/* "menu" class'ının HOVER özelliklerini tanımla */
-.menu:hover, .menu:focus {
+.header-menu .list .etiket:hover,
+.header-menu .list .etiket:focus{
     color: #404bbf;
 }
-
-/* "adres" class'ının özelliklerini tanımla */
-.adres {
+.address{
     font-style: normal;
 }
-
-/* "adres-ul" class'ının özelliklerini tanımla */
-.adres-ul {
+.address .address-link{
     display: flex;
-    gap: 40px;
 }
-
-/* "adres-link" class'ının özelliklerini tanımla */
-.adres-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+.address-link .list{
+    margin-right: 40px;
+}
+.address-link .list:last-child{
+    margin-right: 0;
+}
+.address-link .list .etiket{
     color: #434455;
-}
-
-/* "adres-link" class'ının HOVER özelliklerini tanımla */
-.adres-link:hover, .adres-link:focus {
-    color: #404bbf;
-}
-
-/* --- SECTION 1 BÖLÜMÜ --- */
-/* "hero-section" class'ının özelliklerini tanımla */
-.hero-section {
-    background-color: #2e2f42;
-    padding: 188px 0;
-}
-
-/* "hero-header" class'ının özelliklerini tanımla */
-.hero-header {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: #ffffff;
-    max-width: 496px;
+    line-height: 1.5;
+}
+.address-link .list .etiket:hover,
+.address-link .list .etiket:focus{
+    color: #404BBF;
 }
 
-/* "hero-button" class'ının özelliklerini tanımla */
-.hero-button {
-    background-color: #4d5ae5;
-    font-family: 'Roboto', sans-serif;
+.first-section-container{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.button{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    line-height: 1.5;
+    background-color: #4D5AE5;
+    color:#FFFFFF;
+    cursor: pointer;
     display: block;
-    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-
-/* "hero-button" class'ının HOVER ve FOCUS özelliklerini tanımla */
-.hero-button:hover, .hero-button:focus {
-    background-color: #404bbf;
-    cursor: pointer;
+.button:hover,
+.button:focus{
+    background-color:#404BBF;
+    color: #ffffff;
 }
 
-/* --- SECTION 2 BÖLÜMÜ */
-/* "our-features-section" class'ının özelliklerini tanımla */
-.our-features-section {
+.our-team{
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+.section-header{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.hero{
+    background-color: #2E2F42;
+    padding: 188px 0;
+}
+.hero-header{
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 496px;
+}
+
+.second-section{
+    background-color: #FFFFFF;
     padding: 120px 0;
 }
 
-/* "visually-hidden" class'ının özelliklerini tanımla */
 .visually-hidden {
-    display: none;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 
-/* "our-features-ul" class'ının özelliklerini tanımla */
-.our-features-ul {
+
+
+.section-ul{
     display: flex;
     gap: 24px;
 }
 
-/* "our-features-li" class'ının özelliklerini tanımla */
-.our-features-li {
-    flex-basis: calc((100% - 72px) / 4)
+.section-ul .list.section-third-list{
+width: calc((100% - 48px) / 4);
 }
 
-/* "our-features-list-header" class'ının özelliklerini tanımla */
-.our-features-list-header {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
-
-/* "our-features-list-paragraph" class'ının özelliklerini tanımla */
-.our-features-list-paragraph {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* --- SECTION 3 BÖLÜMÜ --- */
-/* "our-team-section" class'ının özelliklerini tanımla */
-.our-team-section {
-    background-color: #f4f4fd;
-    padding: 120px 0;
-}
-
-/* "our-team-header" class'ının özelliklerini tanımla */
-.our-team-header {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
-
-/* "our-team-ul" class'ının özelliklerini tanımla */
-.our-team-ul {
-    display: flex;
-    gap: 24px;
-}
-
-/* "our-team-list" class'ının özelliklerini tanımla */
-.our-team-list {
-    background-color: #ffffff;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-}
-
-/* "our-team-calisan-bilgi" class'ının özelliklerini tanımla */
-.our-team-calisan-bilgi {
-    padding: 32px 0;
-}
-
-/* "our-team-list-header" class'ının özelliklerini tanımla */
-.our-team-list-header {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-/* "our-team-list-paragraph" class'ının özelliklerini tanımla */
-.our-team-list-paragraph {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-align: center;
-}
-
-/* --- SECTION 4 BÖLÜMÜ --- */
-/* "our-portfolio-section" class'ının özelliklerini tanımla */
-.our-portfolio-section {
-    padding: 120px 0;
-}
-
-/* "our-portfolio-header" class'ının özelliklerini tanımla */
-.our-portfolio-header {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
-
-/* "our-portfolio-ul" class'ının özelliklerini tanımla */
-.our-portfolio-ul {
-    display: flex;
+.four{
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
 
-/* "our-portfolio-li" class'ının özelliklerini tanımla */
-.our-portfolio-li {
+.section-ul.four .list.last{
+    margin-bottom: 48px;
+    width:calc((100% - 48px) / 3);
+}
+
+.last:nth-child(3n){
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.section-ul .list:last-child{
+    margin-right: 0;
+}
+.section-ul .list{
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.section-ul .list.section-second-list{
     width: calc((100% - 72px) / 4);
 }
 
-/* "our-portfolio-div" class'ının özelliklerini tanımla */
-.our-portfolio-div {
+.card{
+    padding: 32px 0;
+}
+
+.card-wrap{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
 }
 
-/* "our-portfolio-list-header" class'ının özelliklerini tanımla */
-.our-portfolio-list-header {
+.section-ul .list .subtitle{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
 }
-
-/* "our-portfolio-list-paragraph" class'ının özelliklerini tanımla */
-.our-portfolio-list-paragraph {
+.section-ul .list .text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
-/* --- FOOTER BÖLÜMÜ */
-/* "footer" class'ının özelliklerini tanımla */
-.footer {
-    background-color: #2e2f42;
+.fourth-section{
+    background-color: #ffffff;
+    padding: 120px 0;
+}
+.footer{
+    background-color: #2E2F42;
     padding: 100px 0;
 }
-
-/* "footer-logo" class'ının özelliklerini tanımla */
-.footer-logo {
-    font-family: 'Raleway', sans-serif;
+.footer .logo{
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size:18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+    color: #4D5AE5;
     display: inline-block;
     margin-bottom: 16px;
 }
 
-/* "footer-logo-span" class'ının özelliklerini tanımla */
-.footer-logo-span {
-    color: #f4f4fd;
+.footer .logo .span{
+    color: #F4F4FD;
+    display: inline-block;
 }
-
-/* "footer-paragraph" class'ının özelliklerini tanımla */
-.footer-paragraph {
+.footer .text{
+    font-size: 16px;
     line-height: 1.5;
-    color: #f4f4fd;
     letter-spacing: 0.02em;
+    color: #F4F4FD;
     max-width: 264px;
 }
